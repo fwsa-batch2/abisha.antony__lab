@@ -93,7 +93,7 @@ select * from movie cross join stars ;
 ```
 
 | id | movie        | released_year | language | imdb_rating | id | theatre      | movie_director |
-|----|--------------|---------------|----------|-------------+----|-------------|-----------------|
+|----|--------------|---------------|----------|-------------|----|--------------|----------------|
 |  1 | kaithi       |          2020 | tamil    |           6 |  5 | jazz_cinemas | shankar        |
 |  1 | kaithi       |          2020 | tamil    |           6 |  4 | pvt          | lokesh         |
 |  1 | kaithi       |          2020 | tamil    |           6 |  3 | pvr          | vetrimaaran    |
