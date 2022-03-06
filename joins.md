@@ -75,6 +75,7 @@ select * from stars;
 ### RIGHT JOIN
 ```syntax
  select * from movie right join stars on movie.id = stars.id;
+```
 
 | id   | movie        | released_year | language | imdb_rating | id | theatre      | movie_director |
 |------|--------------|---------------|----------|-------------|----|--------------|----------------|
