@@ -208,3 +208,32 @@ SELECT * FROM students INNER JOIN Student_class ON students.id=Student_class.stu
 ```syntax
 SELECT * FROM students INNER JOIN Student_class ON students.id=Student_class.student_id WHERE class=5;
 ```
+Empty set (0.00 sec)
+###  Find Class for the given student email id #
+###  Email: n@gmail.com
+```Syntax
+select *from students where email like "_n%";
+```
+
+Empty set (0.00 sec)
+### Feature 16: Find Students who has not enrolled in a class #
+```syntax
+ select * from students left join  student_class on students.id=student_class.id;
+```
+
+| id | name     | email          | mobile_no  | gender | dob        | created_data        | id   | student_id | class | status |
+|----|----------|----------------|------------|--------|------------|---------------------|------|------------|-------|--------|
+|  1 | Abisha   | abi@gmail.com  | 9715907384 | F      | 2003-06-03 | 2022-03-03 11:54:47 | NULL |       NULL |  NULL | NULL   |
+|  2 | Jersheya | jeru@gmail.com | 9715987650 | F      | 2003-06-26 | 2022-03-03 11:56:15 | NULL |       NULL |  NULL | NULL   |
+
+### Feature 17: Display all students name with class - include both enrolled and not enrolled #>
+```Syntax
+ select students.name,student_class.class from students left join student_class on students.id = student_class.id;
+```
+
+| name     | class |
+|----------|-------|
+| Abisha   |  NULL |
+| Jersheya |  NULL |
+
+2 rows in set (0.00 sec)
