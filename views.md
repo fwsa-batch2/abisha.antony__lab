@@ -123,3 +123,27 @@ Query OK, 1 row affected (0.01 sec)
 | saran  |   17 |
 +--------+------+
 4 rows in set (0.01 sec)
+### TO FIND TABLE TYPE
+SHOW FULL TABLES WHERE table_type = 'VIEW';
++-------------------+------------+
+| Tables_in_blazers | Table_type |
++-------------------+------------+
+| team              | VIEW       |
++-------------------+------------+
+1 row in set (0.01 sec)
+
+mysql> SHOW FULL TABLES WHERE table_type != 'VIEW';
++-------------------+------------+
+| Tables_in_blazers | Table_type |
++-------------------+------------+
+| trail             | BASE TABLE |
++-------------------+------------+
+1 row in set (0.00 sec)
+
+SHOW FULL TABLES WHERE table_type = 'BASE TABLE' ;
++-------------------+------------+
+| Tables_in_blazers | Table_type |
++-------------------+------------+
+| trail             | BASE TABLE |
++-------------------+------------+
+1 row in set (0.00 sec)
