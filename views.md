@@ -44,9 +44,8 @@ Database changed
 
 5 rows in set (0.04 sec)
 
-mysql> insert into trail values ('abi',18,'female','tvli'),('jeru',19,'female','tvli'),('swedha',17,'female'),('saran',17,'female');
-ERROR 1136 (21S01): Column count doesn't match value count at row 3
-mysql> insert into trail values ('abi',18,'female','tvli'),('jeru',19,'female','tvli'),('swedha',17,'female','tvli'),('saran',17,'female','tvli');
+
+insert into trail values ('abi',18,'female','tvli'),('jeru',19,'female','tvli'),('swedha',17,'female','tvli'),('saran',17,'female','tvli');
 Query OK, 4 rows affected (0.02 sec)
 Records: 4  Duplicates: 0  Warnings: 0
 
@@ -70,80 +69,80 @@ CREATE VIEW blazers AS SELECT name,city from trail WHERE age>17;
 Query OK, 0 rows affected (0.02 sec)
 ### SELECT VIEW
 select * from blazers;
-+-----------+----------+
+
 | name      | city     |
-+-----------+----------+
+|-----------|----------|
 | haiden    | chennai  |
 | rishi     | tirupur  |
 | riyas     | tvli     |
 | annamalai | madhurai |
 | abi       | tvli     |
 | jeru      | tvli     |
-+-----------+----------+
+
 6 rows in set (0.01 sec)
 ### REPLACE VIEW
  CREATE OR REPLACE VIEW blazers AS  SELECT name,age FROM trail WHERE gender='female';
 Query OK, 0 rows affected (0.01 sec)
 
  select * from blazers;
-+--------+------+
+
 | name   | age  |
-+--------+------+
+|--------|------|
 | abi    |   18 |
 | jeru   |   19 |
 | swedha |   17 |
 | saran  |   17 |
-+--------+------+
+
 4 rows in set (0.01 sec)
 ### RENAME TABLE NAME
  RENAME TABLE blazers TO team;
 Query OK, 0 rows affected (0.01 sec)
 
  select * from team;
-+--------+------+
+
 | name   | age  |
-+--------+------+
+|--------|------|
 | abi    |   18 |
 | jeru   |   19 |
 | swedha |   17 |
 | saran  |   17 |
-+--------+------+
+
 4 rows in set (0.01 sec)
 ### INSERT VALUES
  INSERT INTO team VALUES('vaish',18);
 Query OK, 1 row affected (0.01 sec)
 
  select * from team;
-+--------+------+
+
 | name   | age  |
-+--------+------+
+|--------|------|
 | abi    |   18 |
 | jeru   |   19 |
 | swedha |   17 |
 | saran  |   17 |
-+--------+------+
+
 4 rows in set (0.01 sec)
 ### TO FIND TABLE TYPE
 SHOW FULL TABLES WHERE table_type = 'VIEW';
-+-------------------+------------+
+
 | Tables_in_blazers | Table_type |
-+-------------------+------------+
+|-------------------|------------|
 | team              | VIEW       |
-+-------------------+------------+
+
 1 row in set (0.01 sec)
 
 mysql> SHOW FULL TABLES WHERE table_type != 'VIEW';
-+-------------------+------------+
+
 | Tables_in_blazers | Table_type |
-+-------------------+------------+
+|-------------------|------------|
 | trail             | BASE TABLE |
-+-------------------+------------+
+
 1 row in set (0.00 sec)
 
 SHOW FULL TABLES WHERE table_type = 'BASE TABLE' ;
-+-------------------+------------+
+
 | Tables_in_blazers | Table_type |
-+-------------------+------------+
+|-------------------|------------|
 | trail             | BASE TABLE |
-+-------------------+------------+
+
 1 row in set (0.00 sec)

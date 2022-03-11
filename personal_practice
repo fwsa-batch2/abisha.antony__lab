@@ -1,0 +1,127 @@
+###  1. Write a SQL statement to create a simple table countries including columns country_id,country_name and region_id.
+
+mysql> create database examples;
+###### Query OK, 1 row affected (0.03 sec)
+
+mysql> show databases;
+
+| Database           |
+|--------------------|
+| academy            |
+| batch              |
+| blazers            |
+| examples           |
+| exercise           |
+| girls              |
+| information        |
+| information_schema |
+| movie              |
+| mysql              |
+| orders             |
+| performance_schema |
+| sakila             |
+| students           |
+| sys                |
+| users              |
+| world              |
+
+17 rows in set (0.07 sec)
+
+use examples;
+Database changed
+ create table countries(country_id int primary key auto_increment,country_name varchar(20),region_id int);
+Query OK, 0 rows affected (0.07 sec)
+
+####  2. Write a SQL statement to create a simple table countries including columns country_id,country_name and region_id which is already exists.
+##### if not exists check whether the table exists or not , (if not exists it creates a table)
+
+create table if not exists countries(country_id int primary key auto_increment,country_name varchar(20),region_id int);
+###### Query OK, 0 rows affected, 1 warning (0.02 sec)
+
+
+#### 3. Write a SQL statement to create the structure of a table dup_countries similar to countries.
+
+### syntax  :create table new_tbname like old_tbname (creates a duplicate table)(1 st method)
+
+ create table dup_countriess like countries;
+###### Query OK, 0 rows affected (0.03 sec)
+
+ desc countries;
+
+| Field        | Type        | Null | Key | Default | Extra          |
+|--------------+-------------+------+-----+---------+----------------|
+| country_id   | int         | NO   | PRI | NULL    | auto_increment |
+| country_name | varchar(20) | YES  |     | NULL    |                |
+| region_id    | int         | YES  |     | NULL    |                |
+
+3 rows in set (0.03 sec)
+
+ desc dup_countriess;
+
+| Field        | Type        | Null | Key | Default | Extra          |
++--------------|-------------|------|-----|---------|----------------|
+| country_id   | int         | NO   | PRI | NULL    | auto_increment |
+| country_name | varchar(20) | YES  |     | NULL    |                |
+| region_id    | int         | YES  |     | NULL    |                |
+
+3 rows in set (0.01 sec)
+
+####  Write a SQL statement to create a duplicate copy of countries table including structure and data by name dup_countries.(2 nd method)
+
+
+ create table if not exists dup_countriess as select * from countries;
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+| Field        | Type        | Null | Key | Default | Extra          |
+|--------------|-------------+------|-----|---------|----------------|
+| country_id   | int         | NO   | PRI | NULL    | auto_increment |
+| country_name | varchar(20) | YES  |     | NULL    |                |
+| region_id    | int         | YES  |     | NULL    |                |
+
+3 rows in set (0.00 sec)
+
+#### 4. Write a SQL statement to create a table countries set a constraint NULL.
+
+
+ create table state(state_id int primary key auto_increment,state_name varchar(20) null);
+Query OK, 0 rows affected (0.05 sec)
+
+ desc state;
++------------+-------------+------+-----+---------+----------------+
+| Field      | Type        | Null | Key | Default | Extra          |
++------------+-------------+------+-----+---------+----------------+
+| state_id   | int         | NO   | PRI | NULL    | auto_increment |
+| state_name | varchar(20) | YES  |     | NULL    |                |
++------------+-------------+------+-----+---------+----------------+
+2 rows in set (0.02 sec)
+
+ ### 7. Write a SQL statement to create a table named countries including columns country_id, country_name and region_id and make sure that no countries except Italy, India and China will be entered in the table.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
