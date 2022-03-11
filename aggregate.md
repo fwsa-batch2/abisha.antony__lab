@@ -39,7 +39,7 @@ Database changed
  ```
 
 | name      | age  | gender | city           |
-|-----------+------+--------+----------------|
+|-----------|------|--------|----------------|
 | haiden    |   18 | male   | chennai        |
 | gvm       |   17 | male   | ramanathapuram |
 | rishi     |   19 | male   | tirupur        |
