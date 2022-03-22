@@ -1,6 +1,8 @@
 
 #### show databases;
 
+
+
 | Database           |
 |--------------------|
 | academy            |
@@ -8,6 +10,7 @@
 | blazers            |
 | examples           |
 | exercise           |
+| freshdance_academy |
 | girls              |
 | information        |
 | information_schema |
@@ -21,7 +24,7 @@
 | users              |
 | world              |
 
-17 rows in set (0.01 sec)
+18 rows in set (0.11 sec)
 
 create database freshdance_academy;
 ###### Query OK, 1 row affected (0.01 sec)
