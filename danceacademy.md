@@ -127,7 +127,7 @@ select * from users;
 ```
 
 | id | name      | phone      | email             | password        |
-+----+-----------+------------+-------------------+-----------------+
+|----|-----------|------------|-------------------|-----------------|
 |  1 | swedha    | 9942153249 | swed@gmail.com    | swedha          |
 |  2 | nanthitha | 9715907384 | dossjr@gmail.com  | nanthitha       |
 |  3 | santhoshi | 7502869260 | susa@gmail.com    | santhoshi       |
