@@ -94,11 +94,14 @@ create table users(id int primary key, name varchar(20) not null, phone bigint u
  insert into users values (1,'swedha',9942153249,'swed@gmail.com','swedha');
  ```
 ###### Query OK, 1 row affected (0.02 sec)
+```syntax
 insert into users(id,name,phone,email,password) values (2,'nanthitha',9715907384,'dossjr@gmail.com','nanthitha'),
     -> (3,'santhoshi',7502869260,'susa@gmail.com','santhoshi'),
     -> (4,'pallavi',9445550324,'pallu@gmail.com','pallavi'),
     -> (5,'priya',9444550325,'priya@gmail.com','priya@gmail.com'),
     -> (6,'viknesh',9444550322,'viki@gmail.com','viknesh');
+```
+    
 ###### Query OK, 5 rows affected (0.01 sec)
 Records: 5  Duplicates: 0  Warnings: 0
 
