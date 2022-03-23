@@ -101,7 +101,7 @@ insert into users(id,name,phone,email,password) values (2,'nanthitha',9715907384
     -> (5,'priya',9444550325,'priya@gmail.com','priya@gmail.com'),
     -> (6,'viknesh',9444550322,'viki@gmail.com','viknesh');
 ```
-    
+
 ###### Query OK, 5 rows affected (0.01 sec)
 Records: 5  Duplicates: 0  Warnings: 0
 
@@ -428,6 +428,10 @@ Records: 0  Duplicates: 0  Warnings: 0
 |  3 | susa@gmail.com   | do_you_have_a_demo_class?   |       3 |
 
 3 rows in set (0.01 sec)
+
+## EER Model for freshdance_academy Database:
+![alt eer-model-fa](eer_model.png)
+
 
 
 
