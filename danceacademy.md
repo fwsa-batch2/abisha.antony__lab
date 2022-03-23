@@ -431,6 +431,9 @@ Records: 0  Duplicates: 0  Warnings: 0
 
 ## EER Model for freshdance_academy Database:
 ![alt eer-model-fa](eer_model.png)
+***
+## ER Model for freshdance_academy database:
+![alt er-model-fa](er_model.png)
 
 
 
