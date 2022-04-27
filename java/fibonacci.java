@@ -1,6 +1,9 @@
 public class fibonacci {
     public static void main(String[] args) {
-        int n1 = 0;
+      
+        }
+        public static int fibo(){
+              int n1 = 0;
         int n2 = 1;
         int n3;
       int  limit = 5;
@@ -16,4 +19,4 @@ public class fibonacci {
         
     }
     
-}
+
