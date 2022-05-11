@@ -1,3 +1,5 @@
+package OOPS;
+
 class first{
     void func1(){
         System.out.println("working 1");

@@ -1,3 +1,5 @@
+package OOPS;
+
 class parent{
     String word = "cow";
 }

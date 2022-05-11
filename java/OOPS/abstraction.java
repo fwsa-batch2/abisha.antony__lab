@@ -1,8 +1,10 @@
-abstract class example {
+package OOPS;
+
+abstract class program {
     abstract void name();
 }
 
-class sum extends example {
+class sum extends program {
     public void name() {
         System.out.println("abstarction");
 

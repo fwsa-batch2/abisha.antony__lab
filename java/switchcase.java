@@ -1,8 +1,7 @@
 public class switchcase {
     public static void main(String[] args) {
         int num = 44;
-        String size=" 
-        ";
+        String size=" ";
         switch(num){
             case 34:
             size = "small";

@@ -2,7 +2,7 @@ interface example{
 void mname();
 void mename();
 }
-class example1 implements example{
+class example1 implements example {
     public  void mname(){
         String a = "abisha";
         System.out.println(a);

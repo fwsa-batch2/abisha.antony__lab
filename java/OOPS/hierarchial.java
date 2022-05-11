@@ -1,19 +1,21 @@
-class parent{
+package OOPS;
+
+class parent35{
     void method1(){
         System.out.println("i am the parent");
     }
 }
-class son1 extends parent{
+class son1 extends parent35{
     void method2(){
         System.out.println("first son");
     }
 }
-class son2 extends parent{
+class son2 extends parent35{
     void method3(){
         System.out.println("second son");
     }
 }
-class son3 extends parent{
+class son3 extends parent35{
     void method4(){
         System.out.println("third son");
     }

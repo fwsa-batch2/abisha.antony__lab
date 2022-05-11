@@ -1,3 +1,5 @@
+package OOPS;
+
 class A{
     void name(){
     String var = "abi";

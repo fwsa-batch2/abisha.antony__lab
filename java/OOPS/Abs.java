@@ -1,3 +1,4 @@
+package OOPS;
 
 interface Abiii{
     int var = 10;

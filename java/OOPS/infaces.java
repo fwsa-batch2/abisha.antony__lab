@@ -1,14 +1,16 @@
-interface myInter{
+package OOPS;
+
+interface myInterface{
     void func();
 }
-class myClass implements myInter{
+class myClassExample implements myInterface{
     public void func(){
         System.out.println("Abisha6");
     }
 }
 public class infaces{
     public static void main(String[] args) {
-        myClass obj = new myClass();
+        myClassExample obj = new myClassExample();
         obj.func();
     }
 }
