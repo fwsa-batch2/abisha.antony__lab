@@ -3,7 +3,7 @@ void mname();
 void mename();
 }
 class example1 implements example {
-    public  void mname(){
+    public void mname(){
         String a = "abisha";
         System.out.println(a);
       
@@ -19,7 +19,7 @@ class example1 implements example {
 public class exam {
     public static void main(String[] args) {
         example1 myobj = new example1();
-        myobj.mename();
+        myobj.mname();
     
 
     }
