@@ -1,10 +1,10 @@
-class Arithmetic{
+class Arithmetic_class {
     public int add(int a, int b){
      return a+b;
     }
 
 }
-class Adder extends Arithmetic{
+class Adder extends Arithmetic_class {
 
 }
 public class inher11 {
