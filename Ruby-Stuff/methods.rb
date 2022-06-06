@@ -1,4 +1,4 @@
-name = "abisha"
+#
 # ex = "hjgsgashjahdsiwuehjfjs"
 # age = "19"
 # let = "ABI"
@@ -7,11 +7,10 @@ name = "abisha"
 # puts name.upcase
 # puts name.downcase
 # puts ex.length
-puts "my name is #{name}"
+# puts "my name is #{name}"
 
 first_name = gets.chomp
-first_name1 =first_name.capitalize
-puts first_name1
+puts first_name.capitalize()
 
 last_name = gets.chomp
 last_name.capitalize!

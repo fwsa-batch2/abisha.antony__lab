@@ -1,4 +1,4 @@
-age = gets.chomp.to_i
+age = Integer(gets.chomp)
 if age < 18
     puts "not eligible"
 
